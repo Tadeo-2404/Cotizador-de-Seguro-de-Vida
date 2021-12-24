@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <title>Cotizador de Seguros de Vida</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-logo col">
+            <a href="index.html">
+            <img src="/img/logo.png"></a>
+        </div>
+        <div class="nav-links col">
+        <div class="link-container" id="link-container-programs">
+            <a href="#" class="link"> Programas</a>
+            <div class="modal-nav" id="first-modal">
+               <div class="modal-nav-title-container">
+                  <h2 class="modal-nav-title">Te ofrecemos una gran variedad de opciones</h2>
+                  <p class="modal-nav-p">Para que no tengas complicaciones</p>
+               </div>
+
+               <div class="line"></div>
+
+              <div class="modal-nav-body-container">
+                <div class="modal-nav-body-services">
+                    <div class="modal-body-service">
+                        <a href="casual.html">
+                        <img src="/img/types/clock.png">
+                        <h3>Seguro Casual</h3></a>
+                    </div>
+    
+                    <div class="modal-body-service">
+                        <a href="accidentes.html">
+                        <img src="/img/types/health-insurance.png">
+                        <h3>Seguro contra <br> Accidentes</h3></a>
+                    </div>
+    
+                    <div class="modal-body-service">
+                        <a href="hipoteca.html">
+                        <img src="/img/types/house.png">
+                        <h3>Seguro de Casa</h3></a>
+                    </div>
+    
+                    <div class="modal-body-service">
+                        <a href="retiro.html">
+                        <img src="/img/types/hucha.png">
+                        <h3>Retiro</h3></a>
+                    </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+
+        <div class="link-container" id="link-container-us">
+            <a href="#" class="link">Nosotros</a> 
+            <div class="modal-nav" id="second-modal">
+                <div class="modal-nav-title-container">
+                   <h2 class="modal-nav-title">Una empresa con decadas de experencia en el area de seguros y cuidado de adultos mayores</h2>
+                   <p class="modal-nav-p">Descubrenos</p>
+                </div>
+ 
+                <div class="line"></div>
+ 
+               <div class="modal-nav-body-container">
+                 <div class="modal-nav-body-services about">
+                     <div class="modal-body-service">
+                         <a href="nosotros.html">
+                         <img src="/img/types/team.png">
+                         <h3>Quienes Somos</h3></a>
+                     </div>
+     
+                     <div class="modal-body-service">
+                         <a href="contacto.html">
+                         <img src="/img/types/quejar.png">
+                         <h3>Contactanos</h3></a>
+                     </div>
+     
+                 </div>
+               </div>
+             </div> 
+        </div>
+        </div>
+    </nav>
+
+
+    <header class="header">
+        <div class="header-container">
+                <div class="header-title-container">
+            <p class="header-text">Tienes preguntas? Ponte en Contacto con Nosotros</p>
+        </div>
+        <div class="img-header-container">
+            <div class="item">
+               <img class="img-header" src="/img/Nosotros/phone.png">
+                <p class="item-text">Marcanos al: 1800-33-78-93-00</p> 
+            </div>
+            <div class="item">
+                <img class="img-header"  src="/img/Nosotros/correo-electronico.png">
+                 <p class="item-text">Envia tu correo a: <a href="#">www.caret.com/help</a></p> 
+             </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form class="form">
+        <div class="form-div">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu Nombre" id="name">
+        </div>
+        <div class="form-div">
+            <label>Email</label>
+            <input type="email" placeholder="Tu Correo" id="correo">
+        </div>
+        <div class="form-div">
+            <label>Numero</label>
+            <input type="tel" placeholder="Tu Numero" id="numero">
+        </div>
+        <div class="form-div">
+            <label>Tengo duda sobre...</label>
+            <select id="select">
+                <option value="">Seleccionar</option>
+                <option value="1">Seguro Casual</option>
+                <option value="2">Seguro contra Accidentes</option>
+                <option value="3">Seguro de Casa</option>
+                <option value="4">Retiro</option>
+            </select>
+        </div>
+        <div class="form-div">
+            <label>Escirbe tu duda</label>
+            <textarea placeholder="Tengo una duda sobre..." id="textArea"></textarea>
+        </div>
+        <div class="form-div" id="padre">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <button type="submit" class="btn-send" id="btn">Enviar</button>
+        </div>
+        
+    </form>  
+    </div>
+  
+   
+
+
+
+    <footer class="footer">
+        <p class="footer-text">Tadeo Alvarez &copy; ALL RIGTHS RESERVED</p>
+    </footer>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/contacto2.js"></script>
+
+</body>
+
+</html>
