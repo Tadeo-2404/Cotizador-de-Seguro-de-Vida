@@ -9,7 +9,6 @@
 }
 
 * {
-    overflow-x: hidden;
     scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +25,6 @@
 
 /* ------------NAV  BAR----------------*/
 .nav {
-    position: fixed;
     display: flex;
     z-index: 1;
     width: 100%;
@@ -54,6 +52,10 @@
 .link:hover {
     text-decoration: underline;
     color: var(--azul);
+}
+
+.canvas-menu-open {
+    width: 10rem;
 }
 
 /*MODAL WINDOW WHEN HOVERING ON LINKS*/
@@ -451,6 +453,10 @@
 }
 
 /*MODAL WINDOW INFORMATION --------------WINDOW 1: llamada*/
+.modal {
+    width: 145rem;
+}
+
 .modal-header {
     background-color: #64B5F6;
 }
@@ -554,7 +560,12 @@
 
 
 /*life service*/
+.life-service-container {
+    display: block;
+}
+
 .life-service {
+    width: 120rem;
     margin-top: 8rem;
     margin-bottom: 8rem;
     background-color: var(--blanco);
@@ -718,13 +729,30 @@ input[type="checkbox"]:checked {
 }
 
 /*FOOTER*/
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer {
+    width: 120rem;
     padding: 2rem;
     font-size: 3rem;
     color: var(--blanco);
     background-color: var(--negro);
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -807,79 +835,118 @@ input[type="checkbox"]:checked {
     #canvas-btn {
         display: block;
     }
-    
+
+
     /*HEADER*/
-    .header {
-        position: unset;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-    }
     .header-wrapper {
-        width: 95rem;
+        display: block;
     }
 
-     .header-text-container {
-        width: 50rem;
+    .header {
+        position: unset;
+        width: 90rem;
+        height: auto;
     }
 
     .header-container {
-        margin-top: 25rem;
-        width: max-content;
+        margin-left: 15rem;
+        position: unset;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
-        position: unset;
     }
     .background {
-        margin-top: 10rem;
+        margin-left: 13rem;
         position: unset;
+        width: 60rem;
     }
 
-    /*TYPES*/
-    .types-wrapper {
-        width: 95rem;
+    .header-title {
+        margin-top: 20rem;
     }
+
+    /*TYPES OF SERVICE*/
+    .types-wrapper {
+        display: block;
+    }
+
+    .types {
+        width: 90rem;
+    }
+
 
     /*READ*/
     .read-container {
-        width: 95rem;
+        display: block;
+    } 
+
+    .read {
+        width: 90rem;
     }
+
+
 
     /*SERVICES*/
     .services-wrapper {
-        width: 95rem;
+        display: block;
     }
+
     .services {
+        width: 90rem;
         flex-direction: column;
     }
+
+    .service {
+      margin-top: 5rem;
+    }
+
+    .services-title {
+       margin-left: 35rem;
+    }
+
 
     /*INFORMATION*/
     .information-wrapper {
-        width: 95rem;
-    }
-    .information {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 5px 1fr;
+        display: block;
     }
 
     .information-container {
-        margin-top: 5rem;
-        flex-direction: column;
+        width: 90rem;
     }
 
+    .information {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 10px 1fr;
+    }
     .process {
         margin-top: 5rem;
+        margin-bottom: 5rem;
     }
-
-    /*SERVICES*/
-    .service {
-        margin-top: 7rem;
-    }
+     
     
+    /*SERVICE*/ 
+    .life-service {
+        width: 90rem;
+    }
 
 
+    /*BRANDS*/
+    .brand-wrapper {
+        display: block;
+    }
+    .brand-container {
+        width: 90rem;
+    }
+
+    /*FOOTER*/
+    .footer-container {
+        display: block;
+    }
+
+    .footer {
+        width: 90rem;
+    }
+
+
+ 
 }

@@ -102,17 +102,19 @@
    </div>
 
   
-  <!-- Button to open the offcanvas sidebar -->
 
 
-    <nav class="nav nav2" class="container-fluid">
+
+    <nav class="nav nav2 fixed-top" class="container-fluid">
         <div class="nav-logo nav-logo2 col">
             <a href="index.html">
             <img src="/img/logo.png"></a>
         </div> 
-         <button id="canvas-btn" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-         Open Offcanvas Sidebar
+
+         <button id="canvas-btn" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <img class="canvas-menu-open"  src="/img/menu.png">
         </button>
+
         <div class="nav-links nav-links2 col">
         <div class="link-container" id="link-container-programs">
             <a href="#" class="link"> Programas</a>
@@ -185,7 +187,7 @@
         </div>
     </nav>
 
-    <div class="header-wrapper" class="container-fluid">
+    <div class="header-wrapper" class="container-lg">
        <header class="header" class="container-fluid">
         <div class="header-container">
             <div class="header-title-container">
@@ -207,8 +209,8 @@
     
 
     <main>
-        <div class="types-wrapper">
-               <div class="types">
+        <div class="types-wrapper" class="container-lg">
+               <div class="types" class="container-lg">
             <div class="types-title-container">
                 <h2 class="types-title">Te brindamos diferentes programas</h2>
             </div>
@@ -349,7 +351,8 @@
         </div>
       
 
-        <section class="life-service" id="form">
+        <div class="life-service-container">
+              <section class="life-service" id="form">
             <form class="form">
                 <legend class="legend">Asegurate con nosotros</legend>
                 <div class="personas part">
@@ -434,6 +437,8 @@
                 </div>
             </form>
         </section>
+        </div>
+      
 
         <div class="brand-wrapper">
             <div class="brand-container">
@@ -579,11 +584,15 @@
          </div>
 
     
+    
 
-    <footer class="footer">
+         <div class="footer-container">
+               <footer class="footer">
         <p class="footer-text">Tadeo Alvarez &copy; ALL RIGTHS RESERVED</p>
     </footer>
 
+         </div>
+  
     
 
     <script src="/js/index.js"></script>
