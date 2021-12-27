@@ -3,9 +3,9 @@
     --blanco: #FFFFFF;
     --gris: #8D99AE;
     --grisClaro: #ced4da;
-    --azul:#2196F3;
-    --azulBajito:#64B5F6;
-    --amarilloFuerte:#f5d400;
+    --azul: #2196F3;
+    --azulBajito: #64B5F6;
+    --amarilloFuerte: #f5d400;
     --amarillo: #f1ca6d;
     --amarilloBajito: #ffffa3;
 }
@@ -15,6 +15,13 @@
     padding: 0;
 }
 
+#canvas {
+    display: none;
+}
+
+#canvas-btn {
+    display: none;
+}
 
 
 /* ------------NAV  BAR----------------*/
@@ -29,14 +36,17 @@
     color: var(--negro);
     padding: 0rem;
 }
+
 .nav-logo img {
     width: 35rem;
 }
+
 .nav-links {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
+
 .link {
     color: var(--negro);
     text-transform: uppercase;
@@ -49,9 +59,12 @@
     color: var(--amarilloFuerte);
 }
 
+.canvas-menu-open {
+    width: 10rem;
+}
 
 /*MODAL WINDOW WHEN HOVERING ON LINKS*/
-.modal-nav{
+.modal-nav {
     transition: all 0.1s ease-in;
     height: 15rem;
     width: 100%;
@@ -59,7 +72,7 @@
     z-index: 2;
     top: 10rem;
     left: 0;
-    visibility:hidden;
+    visibility: hidden;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -77,9 +90,10 @@
 }
 
 .modal-nav-body-services {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+
 .modal-nav-body-services.about {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -91,10 +105,12 @@
     align-items: center;
     justify-content: center;
 }
+
 .modal-body-service h3 {
     text-decoration: none;
     color: var(--negro);
 }
+
 .modal-body-service a {
     text-decoration: none;
 }
@@ -105,19 +121,19 @@
     height: 8rem;
 }
 
-.line{
+.line {
     height: 100%;
     width: 2px;
     background-color: #0C1618;
 }
 
 #link-container-programs:hover #first-modal {
-   visibility: visible;
+    visibility: visible;
 }
 
 #link-container-us:hover #second-modal {
     visibility: visible;
- }
+}
 
 
 /*HEADER*/
@@ -137,12 +153,14 @@
     place-content: center;
     grid-template-columns: 1fr 1fr;
 }
+
 .header-title-container {
     margin-left: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .line-header {
     width: 30rem;
     height: 0.5rem;
@@ -165,6 +183,7 @@
     color: var(--azul);
     font-weight: 600;
 }
+
 .img-header-container {
     position: relative;
     display: flex;
@@ -192,6 +211,7 @@
     align-items: center;
     flex-direction: column;
 }
+
 .mision-title {
     font-size: 6rem;
 }
@@ -213,12 +233,20 @@
 
 
 /*FUNDATION*/
+.fundation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .fundation {
+    width: 120rem;
     margin-top: 10rem;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fundation-title {
@@ -238,6 +266,7 @@
     display: flex;
     column-gap: 2rem;
 }
+
 .fundator-description-container {
     display: flex;
     flex-direction: column;
@@ -251,6 +280,7 @@
     color: var(--azul);
     font-size: 3rem;
 }
+
 .fundator-description-text {
     font-size: 1.5rem;
 }
@@ -258,6 +288,7 @@
 .fundator-img-container {
     position: relative;
 }
+
 .circle {
     border-radius: 50%;
     position: absolute;
@@ -271,13 +302,13 @@
 
 .fundator-img {
     border-radius: 50%;
-   height: 20rem;
-   width: 20rem;
+    height: 20rem;
+    width: 20rem;
 }
 
 
 /*BRANDS*/
-.brands {
+.brand-wrapper {
     margin-top: 10rem;
     display: flex;
     align-items: center;
@@ -289,12 +320,13 @@
     font-size: 4rem;
 }
 
-.brand  img {
+.brand img {
     width: 15rem;
     height: 10rem;
 }
 
 .brand-container {
+    width: 120rem;
     margin-top: 5rem;
     width: 100rem;
     display: grid;
@@ -304,8 +336,14 @@
 
 
 /*FOOTER*/
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
-    width: 100%;
+    width: 120rem;
     padding: 2rem;
     font-size: 3rem;
     color: var(--blanco);
@@ -320,7 +358,7 @@
 
 @keyframes size {
     0% {
-       width: 0rem;
+        width: 0rem;
     }
 
     20% {
@@ -331,5 +369,157 @@
     100% {
         width: 30rem;
     }
+
+}
+
+
+
+/*MQ*/
+@media (max-width: 768px) {
+    .nav-links2 {
+        display: none;
+    }
+
+    .nav-logo img {
+        display: none;
+    }
+
+    .nav2 {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .nav-logo2 img {
+        display: block;
+        width: 30rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-container {
+        margin-top: 5rem;
+    }
+
+    .modal-nav {
+        background-color: var(--blanco);
+        height: 70rem;
+        top: 0;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25rem 0.5rem 1fr;
+    }
+
+    #second-modal {
+        grid-template-rows: 35rem 0.5rem 1fr;
+    }
+
+    .modal-nav-title {
+        font-size: 3rem;
+    }
+
+    .modal-nav-title-container {
+        padding: 1rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .modal-nav-body-services {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .modal-nav-body-services.about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-body-service {
+        margin-top: 6rem;
+    }
+
+    .modal-body-service h3 {
+        text-align: center;
+    }
+
+    .modal-body-service img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .line {
+        height: 2px;
+        width: 100%;
+    }
+
+    #canvas {
+        display: block;
+    }
+
+    #canvas-btn {
+        display: block;
+    }
+
+
+    /*HEADER*/
+    .header {
+        display: block;
+    }
+
+    .header-container {
+        margin-top: 7em;
+        width: 90rem;
+    }
+
+    /*MISION*/
+    .mision {
+        display: block;
+    }
+
+    .mision-container {
+        width: 90rem;
+    }
+
+    /*FUNDATION*/
+    .fundation-wrapper {
+        display: block;
+    }
+
+    .fundator {
+        padding: 5rem;
+    }
+
+    .fundator-description-text {
+        font-size: 2rem;
+    }
+
+    .fundation {
+        width: 90rem;
+    }
     
+    .fundation-title  {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*BRANDS*/
+    .brand-wrapper {
+        display: block;
+    }
+
+    .brand-container {
+        width: 90rem;
+    }
+
+    /*FOOTER*/
+    .footer-wrapper {
+        display: block;
+    }
+
+    .footer {
+        width: 90rem;
+    }
 }

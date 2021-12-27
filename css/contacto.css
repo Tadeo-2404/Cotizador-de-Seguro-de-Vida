@@ -15,6 +15,13 @@
     padding: 0;
 }
 
+#canvas {
+  display: none;
+}
+
+#canvas-btn {
+  display: none;
+}
 
 
 /* ------------NAV  BAR----------------*/
@@ -49,6 +56,9 @@
     color: var(--amarilloFuerte);
 }
 
+.canvas-menu-open {
+  width: 10rem;
+}
 
 /*MODAL WINDOW WHEN HOVERING ON LINKS*/
 .modal-nav{
@@ -229,8 +239,14 @@ button {
 
 
 /*FOOTER*/
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
-    width: 100%;
+    width: 120rem;
     padding: 2rem;
     font-size: 3rem;
     color: var(--blanco);
@@ -273,6 +289,12 @@ button {
 
 
 /*SPINNER*/
+.ids-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lds-roller {
     display: none;
     position: relative;
@@ -359,3 +381,156 @@ button {
     }
   }
   
+
+
+  
+/*MQ*/
+@media (max-width: 768px) {
+  .nav-links2 {
+      display: none;
+  }
+
+  .nav-logo img {
+      display: none;
+  }
+
+  .nav2 {
+      width: 100%;
+      padding: 3rem;
+  }
+
+  .nav-logo2 img {
+      display: block;
+      width: 30rem;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .link-container {
+      margin-top: 5rem;
+  }
+
+  .modal-nav {
+      background-color: var(--blanco);
+      height: 70rem;
+      top: 0;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 25rem 0.5rem 1fr;
+  }
+
+  #second-modal {
+      grid-template-rows: 35rem 0.5rem 1fr;
+  }
+
+  .modal-nav-title {
+      font-size: 3rem;
+  }
+
+  .modal-nav-title-container {
+      padding: 1rem;
+      text-align: center;
+      margin-left: 0;
+  }
+
+  .modal-nav-body-services {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+  }
+
+  .modal-nav-body-services.about {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .modal-body-service {
+      margin-top: 6rem;
+  }
+
+  .modal-body-service h3 {
+      text-align: center;
+  }
+
+  .modal-body-service img {
+      width: 6rem;
+      height: 6rem;
+  }
+
+  .line {
+      height: 2px;
+      width: 100%;
+  }
+
+  #canvas {
+      display: block;
+  }
+
+  #canvas-btn {
+      display: block;
+  }
+
+  /*HEADER*/
+  .header {
+    display: block;
+  }
+
+  .header-container {
+    width: 90rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .header-text {
+    font-size: 5rem;
+  }
+
+  .item-text {
+    font-size: 4rem;
+  }
+
+  .form-container{
+    display: block;
+    margin-bottom: 20rem;
+    margin-left: 15rem;
+  }
+
+  .form-div:nth-of-type(5) {
+    height: auto;
+  }
+
+  .form {
+    width: 60rem;
+    row-gap: 5rem;
+    height: 130rem;
+  }
+  .form-div label {
+    font-size: 3rem;
+  }
+
+  .form-div select {
+    font-size: 3rem;
+  }
+
+  .form-div input {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  .form-div textarea {
+    font-size: 3rem;
+    height: 20rem;
+  }
+
+  /*footer*/
+   .footer-wrapper {
+     display: block;
+   }
+
+   .footer {
+     width: 90rem;
+   }
+
+}

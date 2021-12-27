@@ -138,6 +138,7 @@
 }
 
 .header-container {
+    overflow: hidden;
     width: 100rem;
     padding: 2rem;
     padding-top: 15rem;
@@ -270,6 +271,7 @@
 }
 
 .benefit-container {
+    overflow: hidden;
     width: 100rem;
     padding: 2rem;
     display: grid;
@@ -334,6 +336,7 @@
 
 /*TESTIGOS*/
 .testigos-main {
+    overflow: hidden;
     padding: 2rem;
     background-color: var(--grisClaro);
     margin-top: 8rem;
