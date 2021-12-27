@@ -15,83 +15,174 @@
 
 <body>
 
-    <nav class="nav">
-        <div class="nav-logo col">
-            <a href="index.html">
-            <img src="/img/logo.png"></a>
-        </div>
-        <div class="nav-links col">
-        <div class="link-container" id="link-container-programs">
-            <a href="#" class="link"> Programas</a>
-            <div class="modal-nav" id="first-modal">
-               <div class="modal-nav-title-container">
-                  <h2 class="modal-nav-title">Te ofrecemos una gran variedad de opciones</h2>
-                  <p class="modal-nav-p">Para que no tengas complicaciones</p>
-               </div>
 
-               <div class="line"></div>
-
-              <div class="modal-nav-body-container">
-                <div class="modal-nav-body-services">
-                    <div class="modal-body-service">
-                        <a href="casual.html">
-                        <img src="/img/types/clock.png">
-                        <h3>Seguro Casual</h3></a>
-                    </div>
-    
-                    <div class="modal-body-service">
-                        <a href="accidentes.html">
-                        <img src="/img/types/health-insurance.png">
-                        <h3>Seguro contra <br> Accidentes</h3></a>
-                    </div>
-    
-                    <div class="modal-body-service">
-                        <a href="hipoteca.html">
-                        <img src="/img/types/house.png">
-                        <h3>Seguro de Casa</h3></a>
-                    </div>
-    
-                    <div class="modal-body-service">
-                        <a href="retiro.html">
-                        <img src="/img/types/hucha.png">
-                        <h3>Retiro</h3></a>
-                    </div>
-                </div>
-              </div>
-            </div> 
-        </div>
-
-        <div class="link-container" id="link-container-us">
-            <a href="#" class="link">Nosotros</a> 
-            <div class="modal-nav" id="second-modal">
+  <div id="canvas">
+    <div class="offcanvas offcanvas-start" id="demo">
+ <div class="offcanvas-header">
+   <h1 class="offcanvas-title">Heading</h1>
+   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+ </div>
+ <div class="offcanvas-body">
+         <div class="nav-logo col">
+             <a href="index.html">
+             <img src="/img/logo.png"></a>
+         </div>
+         <div class="nav-links col">
+         <div class="link-container" id="link-container-programs">
+             <a href="#" class="link"> Programas</a>
+             <div class="modal-nav" id="first-modal">
                 <div class="modal-nav-title-container">
-                   <h2 class="modal-nav-title">Una empresa con decadas de experencia en el area de seguros y cuidado de adultos mayores</h2>
-                   <p class="modal-nav-p">Descubrenos</p>
+                   <h2 class="modal-nav-title">Te ofrecemos una gran variedad de opciones</h2>
+                   <p class="modal-nav-p">Para que no tengas complicaciones</p>
                 </div>
  
                 <div class="line"></div>
  
                <div class="modal-nav-body-container">
-                 <div class="modal-nav-body-services about">
+                 <div class="modal-nav-body-services">
                      <div class="modal-body-service">
-                         <a href="nosotros.html">
-                         <img src="/img/types/team.png">
-                         <h3>Quienes Somos</h3></a>
+                         <a href="casual.html">
+                         <img src="/img/types/clock.png">
+                         <h3>Seguro Casual</h3></a>
                      </div>
      
                      <div class="modal-body-service">
-                         <a href="contacto.html">
-                         <img src="/img/types/quejar.png">
-                         <h3>Contactanos</h3></a>
+                         <a href="accidentes.html">
+                         <img src="/img/types/health-insurance.png">
+                         <h3>Seguro contra <br> Accidentes</h3></a>
                      </div>
      
+                     <div class="modal-body-service">
+                         <a href="hipoteca.html">
+                         <img src="/img/types/house.png">
+                         <h3>Seguro de Casa</h3></a>
+                     </div>
+     
+                     <div class="modal-body-service">
+                         <a href="retiro.html">
+                         <img src="/img/types/hucha.png">
+                         <h3>Retiro</h3></a>
+                     </div>
                  </div>
                </div>
              </div> 
-        </div>
-        </div>
-    </nav>
+         </div>
+ 
+         <div class="link-container" id="link-container-us">
+             <a href="#" class="link">Nosotros</a> 
+             <div class="modal-nav" id="second-modal">
+                 <div class="modal-nav-title-container">
+                    <h2 class="modal-nav-title">Una empresa con decadas de experencia en el area de seguros y cuidado de adultos mayores</h2>
+                    <p class="modal-nav-p">Descubrenos</p>
+                 </div>
+  
+                 <div class="line"></div>
+  
+                <div class="modal-nav-body-container">
+                  <div class="modal-nav-body-services about">
+                      <div class="modal-body-service">
+                          <a href="nosotros.html">
+                          <img src="/img/types/team.png">
+                          <h3>Quienes Somos</h3></a>
+                      </div>
+      
+                      <div class="modal-body-service">
+                          <a href="contacto.html">
+                          <img src="/img/types/quejar.png">
+                          <h3>Contactanos</h3></a>
+                      </div>
+      
+                  </div>
+                </div>
+              </div> 
+         </div>
+         </div>
+  
+ </div>
+</div>
+</div>
 
+ <nav class="nav nav2 fixed-top" class="container-fluid">
+     <div class="nav-logo nav-logo2 col">
+         <a href="index.html">
+         <img src="/img/logo.png"></a>
+     </div> 
+
+      <button id="canvas-btn" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+         <img class="canvas-menu-open"  src="/img/menu.png">
+     </button>
+
+     <div class="nav-links nav-links2 col">
+     <div class="link-container" id="link-container-programs">
+         <a href="#" class="link"> Programas</a>
+         <div class="modal-nav" id="first-modal">
+            <div class="modal-nav-title-container">
+               <h2 class="modal-nav-title">Te ofrecemos una gran variedad de opciones</h2>
+               <p class="modal-nav-p">Para que no tengas complicaciones</p>
+            </div>
+
+            <div class="line"></div>
+
+           <div class="modal-nav-body-container">
+             <div class="modal-nav-body-services">
+                 <div class="modal-body-service">
+                     <a href="casual.html">
+                     <img src="/img/types/clock.png">
+                     <h3>Seguro Casual</h3></a>
+                 </div>
+ 
+                 <div class="modal-body-service">
+                     <a href="accidentes.html">
+                     <img src="/img/types/health-insurance.png">
+                     <h3>Seguro contra <br> Accidentes</h3></a>
+                 </div>
+ 
+                 <div class="modal-body-service">
+                     <a href="hipoteca.html">
+                     <img src="/img/types/house.png">
+                     <h3>Seguro de Casa</h3></a>
+                 </div>
+ 
+                 <div class="modal-body-service">
+                     <a href="retiro.html">
+                     <img src="/img/types/hucha.png">
+                     <h3>Retiro</h3></a>
+                 </div>
+             </div>
+           </div>
+         </div> 
+     </div>
+
+     <div class="link-container" id="link-container-us">
+         <a href="#" class="link">Nosotros</a> 
+         <div class="modal-nav" id="second-modal">
+             <div class="modal-nav-title-container">
+                <h2 class="modal-nav-title">Una empresa con decadas de experencia en el area de seguros y cuidado de adultos mayores</h2>
+                <p class="modal-nav-p">Descubrenos</p>
+             </div>
+
+             <div class="line"></div>
+
+            <div class="modal-nav-body-container">
+              <div class="modal-nav-body-services about">
+                  <div class="modal-body-service">
+                      <a href="nosotros.html">
+                      <img src="/img/types/team.png">
+                      <h3>Quienes Somos</h3></a>
+                  </div>
+  
+                  <div class="modal-body-service">
+                      <a href="contacto.html">
+                      <img src="/img/types/quejar.png">
+                      <h3>Contactanos</h3></a>
+                  </div>
+  
+              </div>
+            </div>
+          </div> 
+     </div>
+     </div>
+ </nav>
 
     <header class="header">
         <div class="header-container">
@@ -289,9 +380,11 @@
        </div>
    </div>
    
+   <div class="footer-wrapper">
     <footer class="footer">
-        <p class="footer-text">Tadeo Alvarez &copy; ALL RIGTHS RESERVED</p>
-    </footer>
+      <p class="footer-text">Tadeo Alvarez &copy; ALL RIGTHS RESERVED</p>
+     </footer>
+   </div>
 
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

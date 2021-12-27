@@ -15,7 +15,13 @@
     padding: 0;
 }
 
+#canvas {
+    display: none;
+}
 
+#canvas-btn {
+    display: none;
+}
 
 /* ------------NAV  BAR----------------*/
 .nav {
@@ -47,6 +53,10 @@
 .link:hover {
     text-decoration: underline;
     color: var(--amarilloFuerte);
+}
+
+.canvas-menu-open {
+    width: 10rem;
 }
 
 
@@ -577,3 +587,160 @@ td {
      }
      
  }
+
+
+
+ /*MQ*/
+@media (max-width: 768px) {
+    .nav-links2 {
+        display: none;
+    }
+    .nav-logo img {
+    display: none;
+    }
+
+    .nav2 {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .nav-logo2 img {
+        display: block;
+        width: 30rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-container {
+        margin-top: 5rem;
+    }
+    .modal-nav {
+        background-color: var(--blanco);
+        height: 70rem;
+        top: 0;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25rem 0.5rem 1fr;
+    }
+    
+    #second-modal {
+        grid-template-rows: 35rem 0.5rem 1fr;
+    }
+    .modal-nav-title {
+        font-size: 3rem;
+    }
+    .modal-nav-title-container {
+        padding: 1rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .modal-nav-body-services {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .modal-nav-body-services.about {
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-body-service {
+        margin-top: 6rem;
+    }
+
+    .modal-body-service h3 {
+        text-align: center;
+    }
+    .modal-body-service img {
+        width: 6rem;
+        height: 6rem;
+    }
+    .line {
+        height: 2px;
+        width: 100%;
+    }
+    #canvas {
+        display: block;
+    }
+    
+    #canvas-btn {
+        display: block;
+    }
+
+    /*HEADER*/
+    .header {
+        display: block;
+    }
+    .header-container {
+        margin-top: 7em;
+        width: 90rem;
+    }
+
+    /*SERVICIOS*/
+    .servicios {
+        display: block;
+    }
+    .servicio-container {
+        width: 90rem;
+    }
+
+    /*KNOW SECTION*/
+    .know {
+        display: block;
+    }
+
+    .know-container {
+        width: 90rem;
+    }
+
+    /*BENEFICIOS SECTION*/
+    .benefit {
+        display: block;
+    }
+
+    .benefit-container {
+        width: 90rem;
+    }
+
+    /*TESTIGOS*/
+    .testigos-wrapper {
+        display: block;
+    }
+    .testigos-main {
+        width: 90rem;
+    }
+    .testigos-container {
+        width: 90rem;
+    }
+
+    /*COVERT*/
+    .covert-wrapper {
+        display: block;
+    }
+    .covert {
+        width: 90rem;
+    }
+
+    /*APPLY*/
+    .apply {
+        display: block;
+    }
+
+    .apply-container {
+        width: 90rem;
+    }
+
+    .arrow {
+        left: 32rem;
+    }
+
+    /*FOOTER*/
+    .footer-wrapper {
+        display: block;
+    }
+
+    .footer {
+        width: 90rem;
+    }
+}
